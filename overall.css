@@ -1,0 +1,134 @@
+h1 {
+text-align: center;
+font-family : "Lucida Calligraphy";
+background-color : pink;
+}
+
+h2 {
+text-align: center;
+font-family: sans-serif;
+color : dark #ffc0cb;
+}
+
+.row{
+display : flex;
+flex-direction : row;
+}
+
+h3{
+text-align : center;
+font-family : "Lucida Calligraphy";
+}
+.container {
+    border: 1px solid black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    max-width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.button-container button {
+    margin-right: 10px; /* Adjust margin as needed */
+    padding: 15px 20px;
+    font-size: 16px;
+    flex: 1; /* Equal width for all buttons */
+}
+
+
+.button-container button {
+    background-color: rgb(255,192,203);
+    color: #100202; /* Adjust text color as needed */
+    font-size: x-large;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #fe738a; /* Adjust hover color as needed */
+}
+
+footer{
+    text-align: center;
+    padding : 50px;
+    background-color: white;
+    position: fixed;
+    bottom : 0;
+    left : 0;
+    width : 100%;
+}
+
+.menu-title{
+    text-align: center;
+    margin-bottom : 20px;
+}
+
+/* Apply styles only within the menu.html structure */
+.menu-container {
+    display: flex;
+}
+
+/* Style for the left section */
+.left-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.meta-collection {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.meta-collection li {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Style for the right section */
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Show items based on the selected collection */
+.left-section:hover + .right-section .items {
+    display: block;
+}
+
+/* Style for items */
+.items {
+    display: none;
+}
+
+/* Show items based on the selected collection */
+.left-section .collection1 + .right-section .collection1,
+.left-section:hover + .right-section .collection2,
+.left-section:hover + .right-section .collection3,
+.left-section:hover + .right-section .collection4,
+.left-section:hover + .right-section .collection5 {
+    display: block;
+}
+
+address-p{
+    text-align: center;
+    align-items: center;
+
+}
+
+review-form{
+    align-items: center;
+}
